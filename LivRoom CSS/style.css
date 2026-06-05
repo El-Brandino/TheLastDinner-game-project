@@ -1,0 +1,264 @@
+body {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#LivRoom-page {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.container {
+  opacity: 0;
+  transition: opacity 1s ease;
+  width: 100%;
+  height: 100vh;
+}
+
+.container #img {
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.inventory {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+}
+
+#questBox {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.75);
+  color: white;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 100px;
+  font-size: 13px;
+  width: 240px;
+}
+
+#questTitle {
+  font-weight: bold;
+  color: gold;
+  margin-bottom: 6px;
+}
+
+#questList {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.quest-item {
+  margin: 4px 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+#callPoliceBtn {
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  padding: 10px 14px;
+
+  background: rgba(20, 20, 20, 0.85);
+
+  border: 2px solid white;
+
+  color: white;
+
+  font-family: "Press Start 2P", cursive;
+  font-size: 10px;
+
+  cursor: pointer;
+
+  image-rendering: pixelated;
+
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#callPoliceBtn:hover {
+  background: rgba(60, 60, 60, 0.95);
+
+  transform: scale(1.05);
+}
+
+#callPoliceBtn:active {
+  transform: scale(0.95);
+}
+
+#enterLRoom, #enterKitchen, #interactClock, #interactText {
+  position: fixed;
+  cursor: pointer;
+
+}
+
+#enterLRoom {
+  top: 10%;
+  left: 7%;
+  width: 185px;
+  height: 600px;
+}
+
+#enterKitchen {
+  top: 17%;
+  left: 35%;
+  width: 215px;
+  height: 360px;
+}
+
+#interactClock {
+  top: 2%;
+  right: 4%;
+  width: 180px;
+  height: 230px;
+}
+
+#interactText {
+  top: 10%;
+  right: 34%;
+  width: 250px;
+  height: 240px;
+}
+
+.item {
+  opacity: 1;
+  transition: 0.2s;
+  width: 75px;
+  height: 75px;
+  object-fit: contain;
+  cursor: pointer;
+  border: 3px maroon solid;
+  border-radius: 5px;
+}
+
+.item.selected {
+  opacity: 0.4;
+  filter: grayscale(100%);
+  border: 2px solid white;
+}
+
+.item img{
+  width: 60px;
+  height: 60px;
+}
+
+.hotspot{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+
+
+#dialogueBox{
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 70%;
+  padding: 20px;
+
+  background: rgba(0,0,0,0.8);
+  border: 3px solid white;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+
+  display: none;
+
+  z-index: 9999;
+}
+
+#dialogueText{
+  margin: 0;
+}
+
+.featured-music {
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100%;
+}
+
+.music {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+}
+
+.music button {
+  width: 70px;
+  height: 100px;
+  background: none;
+  border: 0;
+  padding: 0;
+  opacity: 0.3;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(50px);
+  filter: invert(1);
+}
+
+.music button.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#volume {
+  width: 75px;
+  opacity: 0;
+  transform: translateX(100px);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+#volume.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#timerDisplay {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: red;
+  border: 3px solid red;
+  padding: 15px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Press Start 2P", monospace;
+  border-radius: 8px;
+  z-index: 1000;
+  text-align: center;
+  min-width: 100px;
+}

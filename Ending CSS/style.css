@@ -1,0 +1,172 @@
+body {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background: black;
+    color: white;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: "Press Start 2P", cursive;
+    min-height: 100vh;
+}
+
+.container {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.ending-title {
+    font-size: 42px;
+    color: #c0392b;
+
+    text-shadow: 4px 4px 0px #5a1a14;
+
+    margin: 0;
+}
+
+.ending-image {
+    width: 600px;
+    aspect-ratio: 16/9;
+    image-rendering: pixelated;
+    border: 6px solid white;
+}
+
+.ending-text {
+    max-width: 850px;
+    font-size: 15px;
+    line-height: 2;
+    color: #dcdcdc;
+}
+
+.confirm-box {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.7);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+.confirm-box.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.confirm-content {
+    width: 400px;
+
+    background: #111;
+
+    border: 3px solid white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.confirm-buttons {
+    margin-top: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+.confirm-buttons button {
+    font-family: inherit;
+    width: 100px;
+    height: 40px;
+
+    background: black;
+
+    color: white;
+
+    border: 2px solid white;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.confirm-buttons button:hover {
+    background: white;
+    color: black;
+}
+
+.featured-music {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+}
+
+.music {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+}
+
+.music button {
+    width: 70px;
+    height: 100px;
+    background: none;
+    filter: invert();
+    border: 0;
+    padding: 0;
+    opacity: 0.3;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(50px);
+}
+
+.music button.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+#volume {
+    width: 75px;
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+#volume.active {
+    opacity: 1;
+    transform: translateX(0);
+}

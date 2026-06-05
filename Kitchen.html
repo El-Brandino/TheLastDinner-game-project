@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Kitchen CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <script defer src="inGame.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="Kitchen-page">
+    <div id="timerDisplay" style="display: none;"></div>
+    <section id="container" class="container">
+        <img id="img" src="asset/Kitchen.png" alt="">
+        <div id="questBox">
+            <div id="questTitle">QUEST</div>
+            <ul id="questList"></ul>
+        </div>
+        <div class="hotspot">
+            <div id="enterHall"></div>
+            <div id="enterLivRoom"></div>
+            <div id="interactTrash"></div>
+            <div id="interactTool"></div>
+        </div>
+        <button id="callPoliceBtn">
+            CALL FOR BACKUP
+        </button>
+        <div id="dialogueBox">
+            <p id="dialogueText"></p>
+        </div>
+        <div class="inventory">
+            <img id="item-blood" class="item" src="asset/blood-detector.png">
+            <img id="item-camera" class="item" src="asset/camera.png">
+            <img id="item-pinset" class="item" src="asset/pinset.png">
+        </div>
+    </section>
+    <div class="featured-music">
+        <div class="music">
+            <button id="btnBGM">
+                <img id="imgBtn" src="asset/volume-solid-full.svg" alt="">
+            </button>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <audio id="footstep" src="sound-asset/footsteps on wood.mp3"></audio>
+    <audio id="inGame-bgm" style="display: none;" loop src="sound-asset/In-game BGM.mp3"></audio>
+</body>
+
+</html>

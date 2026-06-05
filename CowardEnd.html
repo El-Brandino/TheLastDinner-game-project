@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Ending CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <script defer src="inGame.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="CowardEnd-page">
+    <section id="container" class="container">
+        <h1 class="ending-title">
+            COWARD ENDING
+        </h1>
+
+        <img class="ending-image" src="asset/CowardEnd.png">
+
+        <p id="textCWEnd" class="ending-text">
+            As soon as the investigation began, fear slowly consumed your mind. The silence of the house and the
+            overwhelming sense that something was terribly wrong shattered your confidence, until you finally abandoned
+            the case before uncovering the truth. The investigation was handed to another detective, while your name
+            remained only as the detective who walked away from the mission.
+        </p>
+        <div id="confirmBox" class="confirm-box">
+            <div class="confirm-content">
+                <p id="confirmText">
+                    Are you sure you want to go back to menu?
+                </p>
+                <div class="confirm-buttons">
+                    <button id="yesBtn">YES</button>
+                    <button id="noBtn">NO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="featured-music">
+        <div class="music">
+            <button id="btnBGM">
+                <img id="imgBtn" src="asset/volume-solid-full.svg" alt="">
+            </button>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <audio id="inGame-bgm" style="display: none;" loop src="sound-asset/CW-End.mp3"></audio>
+</body>
+
+</html>

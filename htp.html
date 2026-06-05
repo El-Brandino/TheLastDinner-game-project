@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="htp CSS/style.css">
+</head>
+
+<body id="htp-page">
+    <section class="container" id="container">
+        <div class="featured-text">
+            <h1 id="htpText">How To Play</h1>
+            <div class="textContainer">
+                <p id="htpDescription">
+                    Kamu disini bermain sebagai seekor kelinci detektif yang sedang menyelidiki kasus pembunuhan
+                    misterius
+                    di sebuah rumah.
+                    <br>
+                    <br>
+                    Cara bermainnya cukup mudah, kamu hanya perlu mengklik pada objek-objek yang
+                    mencurigakan untuk mencari petunjuk dan memecahkan misteri pembunuhan tersebut.
+                    <br>
+                    <br>
+                    Setiap objek yang kamu
+                    klik akan memberikan informasi yang berbeda-beda, jadi pastikan untuk memeriksa setiap sudut rumah
+                    dengan seksama, dan juga ada sistem inventory dan quest.
+                    <br>
+                    <br>
+                    Kamu harus menyelesaikan apa saja yang
+                    disuruh
+                    oleh quest petunjuk.
+                    <br>
+                    <br>
+                    Dan inventory kamu pertama jangan memilih benda di inventory dulu saat mau
+                    interaksi dengan objek-objek mencurigakan agar informasinya bisa jelas. Selamat bermain dan semoga
+                    berhasil memecahkan kasus ini!
+                </p>
+            </div>
+        </div>
+        <div class="featured-back">
+            <a id="backBtn" onclick="nextPage('menu.html')">
+                Back
+            </a>
+        </div>
+        <div class="featured-music">
+            <div class="music">
+                <button onclick="toggleImg()" id="btnBGM">
+                    <img id="imgBtn" src="asset/volume-solid-full.svg" alt="">
+                </button>
+                <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+        <audio id="menu-bgm" loop muted src="sound-asset/menu BGM.mp3"></audio>
+    </section>
+</body>
+
+</html>

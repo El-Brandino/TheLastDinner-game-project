@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Main menu CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <script defer src="inGame.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="menu-page">
+    <section class="container" id="container">
+        <div class="featured-text">
+            <h1 class="sekuya-regular">The Last Dinner</h1>
+        </div>
+        <div class="featured-btn">
+            <a id="playBtn" onclick="nextPage('story.html')">Play</a>
+            <a id="optBtn" onclick="nextPage('option.html')">Option</a>
+            <a id="htpBtn" onclick="nextPage('htp.html')">How To Play</a>
+            <a id="exitBtn" href="https://www.google.com/search?sca_esv=460606e7be098232&sxsrf=ANbL-n7H3NMgQHzya0n-fZzgYyY_laOoqQ:1778320158472&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpaEWjvZ2Py1XXV8d8KvlI3o6iwGk6Iv1tRbZIBNIVs-5-bUj3iBl-UxHsANYwOkWWQqZAJJdwuRaSoLHfELMHAQFneUwKM50jpvR3lgPoPKPocSAVLVIC1tmtj18NQh34sJoMKkeMLmVT0BQXR6brJvbElwncIYMxPc2e7aIP7xyAYnsJEw_6y0zcNxiTmikcViftsA&q=baby+cat&sa=X&ved=2ahUKEwj4yt7q9quUAxWKUGcHHSHMD_EQtKgLegQIGhAB&biw=1536&bih=782&dpr=1.25">Exit</a>
+        </div>
+        <div class="featured-footer">
+            <div class="featured-count">
+                <a id="resetCount" onclick="resetEndingCount()">Reset Endings</a>
+                <h2 id="endingCount">Endings: 0/4</h2>
+            </div>
+            <div class="featured-music">
+                <div class="music">
+                    <button onclick="toggleImg()" id="btnBGM">
+                        <img id="imgBtn" src="asset/volume-solid-full.svg" alt="">
+                    </button>
+                    <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
+        </div>
+        <audio id="menu-bgm" loop muted src="sound-asset/menu BGM.mp3"></audio>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Story CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script defer src="app.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="prolog-page">
+    <section id="container" class="container story-scene">
+        <div id="prolog">
+            <img id="scene-img" src="asset/prolog-scene 1.png" alt="">
+            <p id="text">
+
+            </p>
+        </div>
+    </section>
+    <div class="featured-music">
+        <div class="music">
+            <button onclick="toggleImg()" id="btnBGM">
+                <img id="imgBtn" src="asset/volume-solid-full.svg" alt="">
+            </button>
+            <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
+        </div>
+    </div>
+    <audio id="prolog-bgm" loop style="display: none;" src="sound-asset/prolog BGM.mp3"></audio>
+</body>
+
+</html>
