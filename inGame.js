@@ -332,7 +332,7 @@ if (yesBtn) {
     localStorage.removeItem("goodEndCondition");
     localStorage.removeItem("vanishEndCondition");
 
-    nextPage("Menu.html");
+    nextPage("index.html");
 
   });
 }
